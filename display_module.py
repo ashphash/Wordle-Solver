@@ -218,8 +218,8 @@ def view_stats_button(window):
     stats_window = tk.Toplevel(window)
     stats_window.geometry("300x200") 
     stats_window.title("Statistics")
-    
-    stats = engine_module.load_stats("performance_data.txt")
+    stats = {}
+    # stats = engine_module.load_stats("performance_data.txt")
     stats_text = (
         f"Games Won: {stats['success_count']}\n"
         f"Games Lost: {stats['failure_count']}\n"

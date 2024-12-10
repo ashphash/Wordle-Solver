@@ -12,6 +12,7 @@ def load_words(word_file):
     return potential_words
 
 def start_game():
+    # lolol
     filter_words()
     update_feedback()
     update_performance_data()
@@ -117,6 +118,7 @@ def solve_wordle(initial_word_list):
             return False, len(guesses)
             
     return False, max_attempts
+
 def get_user_feedback(word):
     """
     Get feedback from the user for a given word using a graphical interface.
