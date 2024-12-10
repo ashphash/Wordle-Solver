@@ -12,7 +12,7 @@ def load_words(word_file):
     return potential_words
 
 def start_game():
-    # lolol
+    # lolol i made this change
     filter_words()
     update_feedback()
     update_performance_data()
