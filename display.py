@@ -9,14 +9,13 @@ def init_instruction_screen():
     window.resizable(False, False)
     window["bg"] = "#424242"
 
-    title = tk.Label
-        window,
+    title = tk.Label(window,
         text="Wordle Solver", bg="#424242", fg="#d9d9d9", font=("Arial", 16, "bold")
     )
     title.pack(pady=20)
 
     frame = tk.Frame(
-        window,w
+        window,
         bg="#2b2b2b",
         relief="solid"
     )
@@ -95,7 +94,8 @@ def init_instruction_screen():
     quit_button.bind("<Enter>", lambda e: e.widget.config(bg="#FF6347"))  # Tomato color for better visual indication
     quit_button.bind("<Leave>", lambda e: e.widget.config(bg="#E6494B"))
 
-    window.mainloop()  
+    window.mainloop()
+    return 1500
 
 
 def wordle_solver_gui(window):
@@ -282,4 +282,5 @@ def stats_screen_gui(window):
     back_button.bind("<Enter>", lambda e: e.widget.config(bg="#4CAF50"))
     back_button.bind("<Leave>", lambda e: e.widget.config(bg="#86E44C"))
 
-init_instruction_screen()
+if __name__ == "__main__":    
+    init_instruction_screen()
